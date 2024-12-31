@@ -29,6 +29,8 @@
 
 <p align="left">💎 Esta aplicação simples tem o foco de iniciar os estudos nos principais conceitos de Ruby on Rails:<br>- Arquitetura MVC<br>- Programação Orientada a Objetos<br>- Integração com banco de dados (SQLite)<br>- "convention over configuration"</p>
 
+<p align="left">💎 Pequena aplicação de CRUD de veículos, para demonstrar as funcionalidades básicas do <strong>model</strong>, <strong>view</strong> e <strong>controller</strong>, o uso de <strong>rotas</strong> no framework, bem como sua integração com <strong>banco de dados</strong>.</p>
+
 ###
 
 <h3 align="left">👩‍💻  Para rodar o projeto:</h3>
