@@ -1,0 +1,41 @@
+<%= form_with(model: @vehicle, local: true, html: { class: 'needs-validation' }) do |form| %>
+  <% if @vehicle.errors.any? %>
+    <div class="alert alert-danger">
+      <h4><%= pluralize(@vehicle.errors.count, "error") %> prevented this vehicle from being saved:</h4>
+      <ul>
+        <% @vehicle.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :mark, class: 'form-label' %>
+    <%= form.text_field :mark, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :model, class: 'form-label' %>
+    <%= form.text_field :model, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :year, class: 'form-label' %>
+    <%= form.number_field :year, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :color, class: 'form-label' %>
+    <%= form.text_field :color, class: 'form-control' %>
+  </div>
+
+  <div class="form-check">
+    <%= form.check_box :is_selling, class: 'form-check-input' %>
+    <%= form.label :is_selling, class: 'form-check-label' %>
+  </div>
+
+  <div class="mt-4">
+    <%= form.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>
